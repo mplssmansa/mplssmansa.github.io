@@ -1,0 +1,170 @@
+body{
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+.container{
+    width: 90vw;
+    margin: auto;
+}
+
+.container-small{
+    width: 60vw;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    line-height: 2.5rem;
+}
+
+h2{
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    margin: 1em;
+    line-height: 1.5em;
+}
+
+.hr-putih{
+    border: solid 1px white;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  
+.iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    background-color: rgb(36, 136, 165);
+    border: none;
+    color: white;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    transition: 0.3s;
+    font-weight: 600;
+    transform: scale(1);
+}
+
+button:hover {
+    background-color: rgb(28, 89, 118);
+    transform: scale(1.025);
+}
+
+table{
+    margin: auto;
+}
+
+td{
+    padding: 0.5em 0.5em;
+    border: solid 2px white;
+}
+
+.clear{
+    clear: both;
+}
+
+.navbar-nonbootstrap{
+    z-index: 3;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.mpls-logo{
+    width: 8rem;
+}
+
+.video-profil{
+    padding: 4rem 0;
+    text-align: center;
+    background-color: rgb(36, 136, 165);
+}
+
+.download-file{
+    padding: 4rem 0;
+    text-align: center;
+    background-color: rgb(250, 133, 0);
+}
+
+.absen{
+    padding: 4rem 0;
+    text-align: center;
+    background-color: rgb(253, 163, 0);
+}
+
+.footer{
+    padding: 2em 0;
+    background-color: white;
+}
+
+.footer-left{
+    width: 40%;
+    float: left;
+}
+
+.support img{
+    padding: 1em 0.5em;
+}
+
+.support-mpk{
+    width: 3em;
+}
+
+.support-osis{
+    width: 2.7em;
+}
+
+.support-medinfo{
+    width: 5em;
+    margin-bottom: 1em;
+    transition: all 0.3s;
+}
+
+.tagline{
+    width: 8em;
+}
+
+.copyright{
+    font-weight: 500;
+}
+
+.kontak-img{
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.kontak-txt{
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.kontak-txt:hover{
+    font-size: larger;
+}
