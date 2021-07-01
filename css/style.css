@@ -168,3 +168,7 @@ td{
 .kontak-txt:hover{
     font-size: larger;
 }
+
+.shadow-hitam{
+    text-shadow: 2px 2px 4px #000000;
+}
