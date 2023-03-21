@@ -37,6 +37,13 @@
     <title>PORTAL MPLS SMANSA</title>
   </head>
   <body>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/download.js"></script>
+
     <div class="flex flex-col h-screen">
       <header class="py-5 bg-white text-white text-center">
         <a href="../index.html"
@@ -44,6 +51,9 @@
         /></a>
       </header>
       <main class="flex-1 overflow-y-auto bg-[#fa8501]">
+        <!-- Not Found -->
+        <div class="notfound" id="notfound"></div>
+        <!-- End Not Found -->
         <!-- Download Data -->
         <div class="download-data py-12 mx-auto">
           <div class="text-3xl font-bold text-center text-white w-4/5 mx-auto">
@@ -94,7 +104,7 @@
               <tr>
                 <td class="p-2 border-2">PERATURAN TATA TERTIB SEKOLAH</td>
                 <td class="p-2 border-2">
-                  <a href="#"
+                  <a id="linkdownload" href=""
                     ><button
                       class="bg-[#2488a5] hover:bg-[#0f6d84] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                       type="button"
@@ -143,5 +153,11 @@
       </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/download.js"></script>
   </body>
 </html>
