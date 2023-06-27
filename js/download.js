@@ -3800,7 +3800,7 @@ var data = [
    "nomorpeserta": "226-MKU-2023",
    "nopendaftaran": 202315,
    "nama": "ADHELFY DESRI CUTYA PUTRI",
-   "jalurpenerimaan": "Mutasi ",
+   "jalurpenerimaan": "Mutasi",
    "asalsekolah": "SMP NEGERI 2 LAHAT",
    "jeniskelamin": "P",
    "tempatlahir": "PEKAN BARU ",
