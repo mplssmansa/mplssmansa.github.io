@@ -5022,6 +5022,8 @@ $(document).ready(function() {
       $("#ruang").append(data[i].ruang);
       $("#nomorpeserta").append(data[i].nomorpeserta);
       a = true;
+      var link = $("#linkdownload");
+      link.attr("href", link.attr("href") + "?nopendaftaran=" + nopendaftaran + "&jalurpenerimaan=" +jalurpenerimaan);
       loadingScreen.style.display = "none";
       return;
     }

@@ -33,10 +33,30 @@
     </script>
     <!-- End Tailwind CSS -->
 
+    <style>
+      #loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+    </style>
+
     <link rel="icon" type="image/x-icon" href="../img/icon.png" />
     <title>PORTAL MPLS SMANSA</title>
   </head>
   <body>
+    <div id="loading-screen">
+      <p>Loading...</p>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
