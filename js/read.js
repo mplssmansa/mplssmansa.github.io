@@ -9,14 +9,14 @@ Sheet2API.read(url, options).then(
   function submitForm(result) {
     var a = false;
     for (var i = 0; i < result.length; i++) {
-      var nisn = new URLSearchParams(window.location.search).get("nisn");
-      if (nisn == result[i].nisn) {
+      var nopendaftaran = new URLSearchParams(window.location.search).get("nopendaftaran");
+      var jalurpenerimaan = new URLSearchParams(window.location.search).get("jalurpenerimaan");
+      if (nopendaftaran == result[i].nopendaftaran && jalurpenerimaan == result[i].jalurpenerimaan) {
         $("#nama").append(result[i].nama);
-        $("#nisn").append(result[i].nisn);
         $("#asalsekolah").append(result[i].asalsekolah);
-        $("#sesi").append(result[i].sesi);
-        $("#haritanggal").append(result[i].haritanggal);
+        $("#ttl").append(result[i].ttl);
         $("#ruang").append(result[i].ruang);
+        $("#nomorpeserta").append(result[i].nomorpeserta);
 
         function randomString(length) {
           var result = "";
