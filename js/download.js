@@ -1,4 +1,5 @@
 import { fetchData } from "./fetchData.js";
+import { listTable } from "./listTable.js";
 var data = [];
 
 // Menampilkan loading screen
@@ -25,6 +26,8 @@ $(document).ready(async function () {
         nopendaftaran == data[i].nopendaftaran &&
         jalurpenerimaan == data[i].jalurpenerimaan
       ) {
+        listTable(dataRes?.dataUrlPeserta);
+
         a = true;
         loadingScreen.style.display = "none";
         return;

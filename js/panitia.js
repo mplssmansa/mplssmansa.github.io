@@ -1,4 +1,5 @@
 import { fetchData } from "./fetchData.js";
+import { listTable } from "./listTable.js";
 
 var data = [];
 
@@ -19,6 +20,7 @@ $(document).ready(async function () {
         break;
       }
     }
+    listTable(dataRes?.dataUrlPanitia);
     loadingScreen.style.display = "none";
     if (!a) {
       $(".download-data").remove();
