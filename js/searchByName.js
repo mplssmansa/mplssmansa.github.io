@@ -33,14 +33,19 @@ function displayData(data) {
       downloadCell.className = "py-2 px-4";
       downloadCell.textContent = item.nopendaftaran;
 
+      const penerimaanCell = document.createElement("td");
+      penerimaanCell.className = "py-2 px-4";
+      penerimaanCell.textContent = item.jalurpenerimaan;
+
       row.appendChild(nameCell);
       row.appendChild(downloadCell);
+      row.appendChild(penerimaanCell);
       tableBody.appendChild(row);
     });
   } else {
     const row = document.createElement("tr");
     const noResultCell = document.createElement("td");
-    noResultCell.setAttribute("colspan", 2);
+    noResultCell.setAttribute("colspan", 3);
     const noResultSpan = document.createElement("span");
     noResultCell.className = "py-2 px-4 text-center italic";
     noResultSpan.textContent = "No result found";
