@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Data</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../img/icon.png" />
+  </head>
+  <body class="bg-gray-100 p-10">
+    <div
+      id="loading-screen"
+      class="fixed inset-0 bg-white bg-opacity-75 flex items-center justify-center hidden"
+    >
+      <div class="text-xl font-semibold text-gray-800">Loading...</div>
+    </div>
+    <div id="search-container" class="mb-6">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search..."
+        class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+        oninput="filterData()"
+      />
+    </div>
+    <table class="min-w-full divide-y divide-gray-200">
+      <thead class="bg-gray-50">
+        <tr>
+          <th
+            class="w-1/2 py-2 px-4 bg-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider"
+          >
+            Nama
+          </th>
+          <th
+            class="w-1/2 py-2 px-4 bg-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider"
+          >
+            Nomor Pendaftaran PPDB
+          </th>
+        </tr>
+      </thead>
+      <tbody id="tableBody" class="bg-white divide-y divide-gray-200">
+        <!-- Rows will be populated here -->
+      </tbody>
+    </table>
+
+    <script src="../js/searchByName.js" type="module"></script>
+  </body>
+</html>
