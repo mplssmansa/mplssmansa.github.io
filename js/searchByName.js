@@ -37,9 +37,47 @@ function displayData(data) {
       penerimaanCell.className = "py-2 px-4";
       penerimaanCell.textContent = item.jalurpenerimaan;
 
+      const copyCell = document.createElement("td");
+      copyCell.className = "py-2 px-4";
+
+      const copyButton = document.createElement("button");
+      copyButton.textContent = "Copy";
+      copyButton.className =
+        "bg-[#2488a5] hover:bg-[#0f6d84] font-bold p-2 rounded border-2 border-black";
+      copyButton.type = "button";
+
+      copyButton.onclick = function () {
+        const textToCopy = `INFORMASI AKUN MPLS SMANSA
+        
+Nama : 
+*${item.nama}*
+
+No. Pendaftaran :
+*${item.nopendaftaran}*
+
+Jalur Penerimaan :
+*${item.jalurpenerimaan}*
+
+Silakan masukkan data tersebut ke Portal MPLS SMANSA. Kerahasiaan akun adalah tanggung jawab setiap peserta.
+
+--- Helpdesk MPLS SMANSA --`;
+
+        navigator.clipboard
+          .writeText(textToCopy)
+          .then(() => {
+            alert("Teks berhasil disalin ke clipboard:\n" + textToCopy);
+          })
+          .catch((err) => {
+            console.error("Gagal menyalin teks: ", err);
+          });
+      };
+
+      copyCell.appendChild(copyButton);
+
       row.appendChild(nameCell);
       row.appendChild(downloadCell);
       row.appendChild(penerimaanCell);
+      row.appendChild(copyCell);
       tableBody.appendChild(row);
     });
   } else {
