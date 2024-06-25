@@ -16,14 +16,14 @@ $(document).ready(async function () {
     var nopendaftaran = new URLSearchParams(window.location.search).get(
       "nopendaftaran"
     );
-    var jalurpenerimaan = new URLSearchParams(window.location.search).get(
-      "jalurpenerimaan"
-    );
+    // var jalurpenerimaan = new URLSearchParams(window.location.search).get(
+    //   "jalurpenerimaan"
+    // );
 
     for (var i = 0; i < data.length; i++) {
       if (
-        nopendaftaran == data[i].nopendaftaran &&
-        jalurpenerimaan == data[i].jalurpenerimaan
+        nopendaftaran == data[i].nopendaftaran
+        // &&jalurpenerimaan == data[i].jalurpenerimaan
       ) {
         $("#nama").append(data[i].nama);
         $("#asalsekolah").append(data[i].asalsekolah);
