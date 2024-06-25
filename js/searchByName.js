@@ -35,7 +35,7 @@ function displayData(data) {
 
       const penerimaanCell = document.createElement("td");
       penerimaanCell.className = "py-2 px-4";
-      penerimaanCell.textContent = item.jalurpenerimaan;
+      penerimaanCell.textContent = item.asalsekolah;
 
       const copyCell = document.createElement("td");
       copyCell.className = "py-2 px-4";
@@ -47,7 +47,7 @@ function displayData(data) {
       copyButton.type = "button";
 
       copyButton.onclick = function () {
-        const textToCopy = `INFORMASI AKUN MPLS SMANSA
+        const textToCopy = `*INFORMASI AKUN MPLS SMANSA*
         
 Nama : 
 *${item.nama}*
@@ -55,8 +55,8 @@ Nama :
 No. Pendaftaran :
 *${item.nopendaftaran}*
 
-Jalur Penerimaan :
-*${item.jalurpenerimaan}*
+Asal Sekolah :
+*${item.asalsekolah}*
 
 Silakan masukkan data tersebut ke Portal MPLS SMANSA. Kerahasiaan akun adalah tanggung jawab setiap peserta.
 
