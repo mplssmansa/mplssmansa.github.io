@@ -1,549 +1,625 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- Tailwind CSS -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&family=VT323&display=swap"
-         rel="stylesheet"
-         />
-      <link
-         rel="stylesheet"
-         href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
-         />
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script>
-         tailwind.config = {
-           darkMode: "class",
-           theme: {
-             fontFamily: {
-               sans: ["Poppins", "sans-serif"],
-               body: ["Poppins", "sans-serif"],
-               mono: ["VT323", "monospace"],
-             },
-           },
-           corePlugins: {
-             preflight: true,
-           },
-         };
-      </script>
-      <!-- End Tailwind CSS -->
-      <link rel="icon" type="image/x-icon" href="img/icon.png" />
-      <title>PORTAL MPLS SMANSA</title>
-   </head>
-   <body>
-      <div class="flex flex-col h-screen">
-         <header class="py-5 bg-white text-white text-center">
-            <a href="index.html"
-               ><img src="img/mpls.png" alt="" class="h-6 w-auto mx-auto"
-               /></a>
-         </header>
-         <main class="flex-1 overflow-y-auto bg-[#2488a5]">
-            <!-- Carousel -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          fontFamily: {
+            sans: ["Poppins", "sans-serif"],
+            body: ["Poppins", "sans-serif"],
+            mono: ["VT323", "monospace"],
+          },
+        },
+        corePlugins: {
+          preflight: true,
+        },
+      };
+    </script>
+    <!-- End Tailwind CSS -->
+    <link rel="icon" type="image/x-icon" href="img/icon.png" />
+    <title>PORTAL MPLS SMANSA</title>
+  </head>
+  <body>
+    <div class="flex flex-col h-screen">
+      <header class="py-5 bg-white text-white text-center">
+        <a href="index.html"
+          ><img src="img/mpls.png" alt="" class="h-6 w-auto mx-auto"
+        /></a>
+      </header>
+      <main class="flex-1 overflow-y-auto bg-[#2488a5]">
+        <!-- Carousel -->
+        <div
+          id="carouselExampleCaptions"
+          class="relative"
+          data-te-carousel-init
+          data-te-carousel-slide
+        >
+          <div
+            class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+          >
             <div
-               id="carouselExampleCaptions"
-               class="relative"
-               data-te-carousel-init
-               data-te-carousel-slide
-               >
-               <div
-                  class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
-                  >
-                  <div
-                     class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-                     data-te-carousel-fade
-                     data-te-carousel-item
-                     data-te-carousel-active
-                     >
-                     <img src="img/6.png" class="w-full" alt="" />
-                     <div
-                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
-                        >
-                        <h5 class="text-3xl font-bold drop-shadow-md">
-                           PORTAL MPLS SMA NEGERI 1 LAHAT
-                        </h5>
-                        <p class="drop-shadow-md">
-                           Menuju Peserta Didik Berprestasi di Bidang Akademik dan Non
-                           Akademik yang Berwawasan Iptek dan Peduli Lingkungan dengan
-                           Dilandasi Iman dan Taqwa untuk Menjawab Tantangan Global
-                        </p>
-                     </div>
-                  </div>
-                  <div
-                     class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-                     data-te-carousel-fade
-                     data-te-carousel-item
-                     >
-                     <img src="img/2.png" class="w-full" alt="" />
-                     <div
-                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
-                        >
-                        <h5 class="text-3xl font-bold drop-shadow-md">
-                           PORTAL MPLS SMA NEGERI 1 LAHAT
-                        </h5>
-                        <p class="drop-shadow-md">
-                           Menuju Peserta Didik Berprestasi di Bidang Akademik dan Non
-                           Akademik yang Berwawasan Iptek dan Peduli Lingkungan dengan
-                           Dilandasi Iman dan Taqwa untuk Menjawab Tantangan Global
-                        </p>
-                     </div>
-                  </div>
-                  <div
-                     class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-                     data-te-carousel-fade
-                     data-te-carousel-item
-                     >
-                     <img src="img/3.png" class="w-full" alt="" />
-                     <div
-                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
-                        >
-                        <h5 class="text-3xl font-bold drop-shadow-md">
-                           PORTAL MPLS SMA NEGERI 1 LAHAT
-                        </h5>
-                        <p class="drop-shadow-md">
-                           Menuju Peserta Didik Berprestasi di Bidang Akademik dan Non
-                           Akademik yang Berwawasan Iptek dan Peduli Lingkungan dengan
-                           Dilandasi Iman dan Taqwa untuk Menjawab Tantangan Global
-                        </p>
-                     </div>
-                  </div>
-                  <div
-                     class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-                     data-te-carousel-fade
-                     data-te-carousel-item
-                     >
-                     <img src="img/4.png" class="w-full" alt="" />
-                     <div
-                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
-                        >
-                        <h5 class="text-3xl font-bold drop-shadow-md">
-                           PORTAL MPLS SMA NEGERI 1 LAHAT
-                        </h5>
-                        <p class="drop-shadow-md">
-                           Menuju Peserta Didik Berprestasi di Bidang Akademik dan Non
-                           Akademik yang Berwawasan Iptek dan Peduli Lingkungan dengan
-                           Dilandasi Iman dan Taqwa untuk Menjawab Tantangan Global
-                        </p>
-                     </div>
-                  </div>
-                  <div
-                     class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-                     data-te-carousel-fade
-                     data-te-carousel-item
-                     >
-                     <img src="img/5.png" class="w-full" alt="" />
-                     <div
-                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
-                        >
-                        <h5 class="text-3xl font-bold drop-shadow-md">
-                           PORTAL MPLS SMA NEGERI 1 LAHAT
-                        </h5>
-                        <p class="drop-shadow-md">
-                           Menuju Peserta Didik Berprestasi di Bidang Akademik dan Non
-                           Akademik yang Berwawasan Iptek dan Peduli Lingkungan dengan
-                           Dilandasi Iman dan Taqwa untuk Menjawab Tantangan Global
-                        </p>
-                     </div>
-                  </div>
-                  <div
-                     class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-                     data-te-carousel-fade
-                     data-te-carousel-item
-                     >
-                     <img src="img/1.png" class="w-full" alt="" />
-                     <div
-                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
-                        >
-                        <h5 class="text-3xl font-bold drop-shadow-md">
-                           PORTAL MPLS SMA NEGERI 1 LAHAT
-                        </h5>
-                        <p class="drop-shadow-md">
-                           Menuju Peserta Didik Berprestasi di Bidang Akademik dan Non
-                           Akademik yang Berwawasan Iptek dan Peduli Lingkungan dengan
-                           Dilandasi Iman dan Taqwa untuk Menjawab Tantangan Global
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <button
-                  class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                  type="button"
-                  data-te-target="#carouselExampleCaptions"
-                  data-te-slide="prev"
-                  >
-                  <span class="inline-block h-8 w-8">
-                     <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="h-6 w-6"
-                        >
-                        <path
-                           stroke-linecap="round"
-                           stroke-linejoin="round"
-                           d="M15.75 19.5L8.25 12l7.5-7.5"
-                           />
-                     </svg>
-                  </span>
-                  <span
-                     class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-                     >Previous</span
-                     >
-               </button>
-               <button
-                  class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                  type="button"
-                  data-te-target="#carouselExampleCaptions"
-                  data-te-slide="next"
-                  >
-                  <span class="inline-block h-8 w-8">
-                     <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="h-6 w-6"
-                        >
-                        <path
-                           stroke-linecap="round"
-                           stroke-linejoin="round"
-                           d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                           />
-                     </svg>
-                  </span>
-                  <span
-                     class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-                     >Next</span
-                     >
-               </button>
+              class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+              data-te-carousel-active
+            >
+              <img src="img/6.png" class="w-full" alt="" />
+              <div
+                class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
+              >
+                <h5 class="text-3xl font-bold drop-shadow-md">
+                  PORTAL MPLS SMA NEGERI 1 LAHAT
+                </h5>
+                <p class="drop-shadow-md">
+                  Menuju Peserta Didik Berprestasi di Bidang Akademik dan Non
+                  Akademik yang Berwawasan Iptek dan Peduli Lingkungan dengan
+                  Dilandasi Iman dan Taqwa untuk Menjawab Tantangan Global
+                </p>
+              </div>
             </div>
-            <!-- End Carousel -->
-            <!-- Video Profil -->
-            <div class="video-profil py-12 container mx-auto">
-               <div class="text-3xl pb-8 font-bold text-center text-white">
-                  VIDEO TUTORIAL PORTAL MPLS SMANSA
-               </div>
-               <div class="relative" style="padding-top: 56.25%">
-                  <iframe
-                     src="https://www.youtube.com/embed/8nYdnQhk1Gs"
-                     title="YouTube video player"
-                     frameborder="0"
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                     allowfullscreen
-                     class="absolute inset-0 w-full h-full"
-                     ></iframe>
-               </div>
+            <div
+              class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+            >
+              <img src="img/2.png" class="w-full" alt="" />
+              <div
+                class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
+              >
+                <h5 class="text-3xl font-bold drop-shadow-md">
+                  PORTAL MPLS SMA NEGERI 1 LAHAT
+                </h5>
+                <p class="drop-shadow-md">
+                  Menuju Peserta Didik Berprestasi di Bidang Akademik dan Non
+                  Akademik yang Berwawasan Iptek dan Peduli Lingkungan dengan
+                  Dilandasi Iman dan Taqwa untuk Menjawab Tantangan Global
+                </p>
+              </div>
             </div>
-            <!-- End Video Profil -->
-            <!-- Search Bar -->
-            <div class="search-bar py-12 mx-auto bg-[#13a4a1]">
-               <div class="text-3xl font-bold text-center text-white">JELAJAH!</div>
-               <div class="text-lg text-center text-white container mx-auto">
-                  Cek informasi mengenai jadwal MPLS kamu di bawah ini!
-               </div>
-               <form method="get" action="html/search.html" class="text-center my-6">
-                  <div class="my-4">
-                     <label
-                        class="block text-white text-sm font-medium mb-2"
-                        for="nopendaftaran"
-                        >
-                        Nomor Pendaftaran PPDB
-                     </label>
-                     <input
-                        class="text-center shadow appearance-none border rounded w-10/12 md:w-5/12 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="nopendaftaran"
-                        name="nopendaftaran"
-                        type="text"
-                        placeholder="Masukkan No. Pendaftaran"
-                        />
-                  </div>
-                  <div class="my-4">
-                     <label
-                        class="block text-white text-sm font-medium mb-2"
-                        for="jalurpenerimaan"
-                        >
-                        Pilih Jalur Penerimaan
-                     </label>
-                     <select
-                        class="text-center shadow border rounded w-10/12 md:w-5/12 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="jalurpenerimaan"
-                        name="jalurpenerimaan"
-                        >
-                        <option value="" selected disabled hidden>Silahkan Pilih</option>
-                        <option value="Prestasi Akademik">Prestasi Akademik</option>
-                        <option value="Prestasi Non Akademik">Prestasi Non Akademik</option>
-                        <!-- <option value="Test Akademik">Test Akademik</option> -->
-                        <option value="Zonasi">Zonasi</option>
-                        <option value="Afirmasi">Afirmasi</option>
-                        <option value="Mutasi">Mutasi</option>
-                     </select>
-                  </div>
-                  <button
-                     class="bg-[#fa8501] hover:bg-[#ad5a01] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                     type="submit"
-                     >
-                  Cek
-                  </button>
-               </form>
-               <div
-                  class="text-md text-center text-white font-bold container mx-auto mt-12"
-                  >
-                  Perhatian!
-                  <span class="font-medium">Pastikan data yang anda masukkan anda benar!</span>
-               </div>
-               <div
-                  class="text-md text-center text-white font-light container mx-auto mb-12"
-                  >
-                  Ada kendala dalam pengecekan?
-                  <span class="text-blue-900 font-medium"><a href="http://wa.me/6288276254367">Hubungi Kami</a></span>
-               </div>
-               <img
-                  src="img/logo-putih.png"
-                  alt=""
-                  class="h-40 w-auto mx-auto my-12"
-                  />
+            <div
+              class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+            >
+              <img src="img/3.png" class="w-full" alt="" />
+              <div
+                class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
+              >
+                <h5 class="text-3xl font-bold drop-shadow-md">
+                  PORTAL MPLS SMA NEGERI 1 LAHAT
+                </h5>
+                <p class="drop-shadow-md">
+                  Menuju Peserta Didik Berprestasi di Bidang Akademik dan Non
+                  Akademik yang Berwawasan Iptek dan Peduli Lingkungan dengan
+                  Dilandasi Iman dan Taqwa untuk Menjawab Tantangan Global
+                </p>
+              </div>
             </div>
-            <!-- End Search Bar -->
-            <!-- Login Panitia -->
-            <div class="search-bar py-12 mx-auto">
-               <div class="text-3xl font-bold text-center text-white">#JejakSATU</div>
-               <div class="text-lg text-center text-white container mx-auto">
-                  Jejaring kepanitiaan dalam <span class="font-bold">SATU</span> koneksi
-               </div>
-               <form method="get" action="html/panitia.html" class="text-center my-6">
-                  <div class="my-4">
-                     <label
-                        class="block text-white text-sm font-medium mb-2"
-                        for="uc"
-                        >
-                        Kode Unik
-                     </label>
-                     <input
-                        class="text-center shadow appearance-none border rounded w-10/12 md:w-5/12 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="uc"
-                        name="uc"
-                        type="text"
-                        placeholder="Masukkan Kode Unik Panitia"
-                        />
-                  </div>
-                  <button
-                     class="bg-[#fa8501] hover:bg-[#ad5a01] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                     type="submit"
-                     >
-                  Masuk
-                  </button>
-               </form>
-               <div
-                  class="text-md text-center text-white font-bold container mx-auto mt-12"
-                  >
-                  Perhatian!
-                  <span class="font-medium">Khusus untuk panitia!</span>
-               </div>
-               <img
-                  src="img/logo-putih.png"
-                  alt=""
-                  class="h-40 w-auto mx-auto my-12"
-                  />
+            <div
+              class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+            >
+              <img src="img/4.png" class="w-full" alt="" />
+              <div
+                class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
+              >
+                <h5 class="text-3xl font-bold drop-shadow-md">
+                  PORTAL MPLS SMA NEGERI 1 LAHAT
+                </h5>
+                <p class="drop-shadow-md">
+                  Menuju Peserta Didik Berprestasi di Bidang Akademik dan Non
+                  Akademik yang Berwawasan Iptek dan Peduli Lingkungan dengan
+                  Dilandasi Iman dan Taqwa untuk Menjawab Tantangan Global
+                </p>
+              </div>
             </div>
-            <!-- End login panitia -->
-            <!-- Upload Lembar Kegiatan -->
-            <div class="py-12 mx-auto bg-[#fa8501]">
-               <table
+            <div
+              class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+            >
+              <img src="img/5.png" class="w-full" alt="" />
+              <div
+                class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
+              >
+                <h5 class="text-3xl font-bold drop-shadow-md">
+                  PORTAL MPLS SMA NEGERI 1 LAHAT
+                </h5>
+                <p class="drop-shadow-md">
+                  Menuju Peserta Didik Berprestasi di Bidang Akademik dan Non
+                  Akademik yang Berwawasan Iptek dan Peduli Lingkungan dengan
+                  Dilandasi Iman dan Taqwa untuk Menjawab Tantangan Global
+                </p>
+              </div>
+            </div>
+            <div
+              class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-fade
+              data-te-carousel-item
+            >
+              <img src="img/1.png" class="w-full" alt="" />
+              <div
+                class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block"
+              >
+                <h5 class="text-3xl font-bold drop-shadow-md">
+                  PORTAL MPLS SMA NEGERI 1 LAHAT
+                </h5>
+                <p class="drop-shadow-md">
+                  Menuju Peserta Didik Berprestasi di Bidang Akademik dan Non
+                  Akademik yang Berwawasan Iptek dan Peduli Lingkungan dengan
+                  Dilandasi Iman dan Taqwa untuk Menjawab Tantangan Global
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button"
+            data-te-target="#carouselExampleCaptions"
+            data-te-slide="prev"
+          >
+            <span class="inline-block h-8 w-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </span>
+            <span
+              class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+              >Previous</span
+            >
+          </button>
+          <button
+            class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button"
+            data-te-target="#carouselExampleCaptions"
+            data-te-slide="next"
+          >
+            <span class="inline-block h-8 w-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </span>
+            <span
+              class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+              >Next</span
+            >
+          </button>
+        </div>
+        <!-- End Carousel -->
+        <!-- Video Profil -->
+        <div class="video-profil py-12 container mx-auto">
+          <div class="text-3xl pb-8 font-bold text-center text-white">
+            VIDEO TUTORIAL PORTAL MPLS SMANSA
+          </div>
+          <div class="relative" style="padding-top: 56.25%">
+            <iframe
+              src="https://www.youtube.com/embed/8nYdnQhk1Gs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="absolute inset-0 w-full h-full"
+            ></iframe>
+          </div>
+        </div>
+        <!-- End Video Profil -->
+        <!-- Search Bar -->
+        <div class="search-bar py-12 mx-auto bg-[#13a4a1]">
+          <div class="text-3xl font-bold text-center text-white">JELAJAH!</div>
+          <div class="text-lg text-center text-white container mx-auto">
+            Cek informasi mengenai jadwal MPLS kamu di bawah ini!
+          </div>
+          <form method="get" action="html/search.html" class="text-center my-6">
+            <div class="my-4">
+              <label
+                class="block text-white text-sm font-medium mb-2"
+                for="nopendaftaran"
+              >
+                Nomor Pendaftaran PPDB
+              </label>
+              <input
+                class="text-center shadow appearance-none border rounded w-10/12 md:w-5/12 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="nopendaftaran"
+                name="nopendaftaran"
+                type="text"
+                placeholder="Masukkan No. Pendaftaran"
+              />
+            </div>
+            <div class="my-4">
+              <label
+                class="block text-white text-sm font-medium mb-2"
+                for="jalurpenerimaan"
+              >
+                Pilih Jalur Penerimaan
+              </label>
+              <select
+                class="text-center shadow border rounded w-10/12 md:w-5/12 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="jalurpenerimaan"
+                name="jalurpenerimaan"
+              >
+                <option value="" selected disabled hidden>
+                  Silahkan Pilih
+                </option>
+                <option value="Prestasi Akademik">Prestasi Akademik</option>
+                <option value="Prestasi Non Akademik">
+                  Prestasi Non Akademik
+                </option>
+                <!-- <option value="Test Akademik">Test Akademik</option> -->
+                <option value="Zonasi">Zonasi</option>
+                <option value="Afirmasi">Afirmasi</option>
+                <option value="Mutasi">Mutasi</option>
+              </select>
+            </div>
+            <button
+              class="bg-[#fa8501] hover:bg-[#ad5a01] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="submit"
+            >
+              Cek
+            </button>
+          </form>
+          <div
+            class="text-md text-center text-white font-bold container mx-auto mt-12"
+          >
+            Perhatian!
+            <span class="font-medium"
+              >Pastikan data yang anda masukkan anda benar!</span
+            >
+          </div>
+          <div
+            class="text-md text-center text-white font-light container mx-auto mb-12"
+          >
+            Ada kendala dalam pengecekan?
+            <span class="text-blue-900 font-medium"
+              ><a href="https://wa.me/6282374323762">Hubungi Kami</a></span
+            >
+          </div>
+          <img
+            src="img/logo-putih.png"
+            alt=""
+            class="h-40 w-auto mx-auto my-12"
+          />
+        </div>
+        <!-- End Search Bar -->
+        <!-- Login Panitia -->
+        <div class="search-bar py-12 mx-auto">
+          <div class="text-3xl font-bold text-center text-white">
+            #JejakSATU
+          </div>
+          <div class="text-lg text-center text-white container mx-auto">
+            Jejaring kepanitiaan dalam
+            <span class="font-bold">SATU</span> koneksi
+          </div>
+          <form
+            method="get"
+            action="html/panitia.html"
+            class="text-center my-6"
+          >
+            <div class="my-4">
+              <label class="block text-white text-sm font-medium mb-2" for="uc">
+                Kode Unik
+              </label>
+              <input
+                class="text-center shadow appearance-none border rounded w-10/12 md:w-5/12 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="uc"
+                name="uc"
+                type="text"
+                placeholder="Masukkan Kode Unik Panitia"
+              />
+            </div>
+            <button
+              class="bg-[#fa8501] hover:bg-[#ad5a01] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="submit"
+            >
+              Masuk
+            </button>
+          </form>
+          <div
+            class="text-md text-center text-white font-bold container mx-auto mt-12"
+          >
+            Perhatian!
+            <span class="font-medium">Khusus untuk panitia!</span>
+          </div>
+          <img
+            src="img/logo-putih.png"
+            alt=""
+            class="h-40 w-auto mx-auto my-12"
+          />
+        </div>
+        <!-- End login panitia -->
+        <!-- Upload Lembar Kegiatan -->
+        <div class="py-12 mx-auto bg-[#fa8501]">
+          <table
             class="del border-white border-2 text-white text-md font-medium text-center rounded-lg p-4 mx-auto w-10/12 md:w-7/12 my-10"
           >
-                  <tbody>
-                  <tr>
-                     <td class="p-2 border-2">UNGGAH LEMBAR KONTROL KEGIATAN PESERTA MPLS</td>
-                     <td class="p-2 border-2">
-                        <a href="http://s.id/LaporLembarKegiatanMPLS"
-                        ><button
-                           class="bg-[#2488a5] hover:bg-[#0f6d84] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                           type="button"
-                        >
-                           UNGGAH
-                        </button></a
-                        >
-                     </td>
-                  </tr>
-                  </tbody>
-               </table>
+            <tbody>
+              <tr>
+                <td class="p-2 border-2">
+                  UNGGAH LEMBAR KONTROL KEGIATAN PESERTA MPLS
+                </td>
+                <td class="p-2 border-2">
+                  <a href="http://s.id/LaporLembarKegiatanMPLS"
+                    ><button
+                      class="bg-[#2488a5] hover:bg-[#0f6d84] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                      type="button"
+                    >
+                      UNGGAH
+                    </button></a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Upload Lembar Kegiatan -->
+        <!-- Footer container -->
+        <footer
+          class="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left"
+        >
+          <div
+            class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between"
+          >
+            <div class="mr-12 hidden lg:block">
+              <span>Ikuti kami di media sosial :</span>
             </div>
-            <!-- End Upload Lembar Kegiatan -->
-            <!-- Footer container -->
-            <footer
-               class="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
-               <div
-                  class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
-                  <div class="mr-12 hidden lg:block">
-                     <span>Ikuti kami di media sosial :</span>
+            <!-- Social network icons container -->
+            <div class="flex justify-center">
+              <a
+                href="https://www.facebook.com/smansalaha"
+                class="mr-6 text-neutral-600 dark:text-neutral-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.sman1lahat.sch.id/"
+                class="mr-6 text-neutral-600 dark:text-neutral-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z"
+                  />
+                  <path
+                    d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/smansalahat"
+                class="mr-6 text-neutral-600 dark:text-neutral-200"
+              >
+                <svg
+                  xmlns="https://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/school/sman-1-lahat"
+                class="mr-6 text-neutral-600 dark:text-neutral-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="mx-6 py-10 text-center md:text-left">
+            <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+              <!-- Tailwind Elements section -->
+              <div class="">
+                <h6
+                  class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="mr-3 h-4 w-4"
+                  >
+                    <path
+                      d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z"
+                    />
+                  </svg>
+                  PORTAL MPLS SMAN 1 LAHAT
+                </h6>
+                <p>
+                  Pusat informasi bagi calon peserta didik baru untuk mengakses
+                  informasi dan sumber daya terkait program MPLS sekolah,
+                  seperti jadwal, materi, dan penilaian, dengan cara yang mudah
+                  dan nyaman.
+                </p>
+              </div>
+              <!-- Useful links section -->
+              <div class="">
+                <h6
+                  class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+                >
+                  Didukung oleh
+                </h6>
+                <div class="grid grid-cols-4 grid-rows-1 items-center">
+                  <div class="flex justify-center md:justify-start">
+                    <img src="img/2artech.png" alt="" class="w-10" />
                   </div>
-                  <!-- Social network icons container -->
-                  <div class="flex justify-center">
-                     <a href="https://www.facebook.com/smansalaha" class="mr-6 text-neutral-600 dark:text-neutral-200">
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           class="h-4 w-4"
-                           fill="currentColor"
-                           viewBox="0 0 24 24">
-                           <path
-                              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-                        </svg>
-                     </a>
-                     <a href="https://www.sman1lahat.sch.id/" class="mr-6 text-neutral-600 dark:text-neutral-200">
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           class="h-4 w-4"
-                           fill="currentColor"
-                           viewBox="0 0 24 24">
-                           <path
-                              d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
-                           <path
-                              d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
-                        </svg>
-                     </a>
-                     <a href="https://www.instagram.com/smansalahat" class="mr-6 text-neutral-600 dark:text-neutral-200">
-                        <svg
-                           xmlns="https://www.w3.org/2000/svg"
-                           class="h-4 w-4"
-                           fill="currentColor"
-                           viewBox="0 0 24 24">
-                           <path
-                              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                        </svg>
-                     </a>
-                     <a href="https://www.linkedin.com/school/sman-1-lahat" class="mr-6 text-neutral-600 dark:text-neutral-200">
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           class="h-4 w-4"
-                           fill="currentColor"
-                           viewBox="0 0 24 24">
-                           <path
-                              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                        </svg>
-                     </a>
+                  <div class="flex justify-center md:justify-start">
+                    <img src="img/medinfo.png" alt="" class="h-4" />
                   </div>
-               </div>
-               <div class="mx-6 py-10 text-center md:text-left">
-                  <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-                     <!-- Tailwind Elements section -->
-                     <div class="">
-                        <h6
-                           class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
-                           <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="currentColor"
-                              class="mr-3 h-4 w-4">
-                              <path
-                                 d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
-                           </svg>
-                           PORTAL MPLS SMAN 1 LAHAT
-                        </h6>
-                        <p>
-                           Pusat informasi bagi calon peserta didik baru untuk mengakses informasi dan sumber daya terkait program MPLS sekolah, seperti jadwal, materi, dan penilaian, dengan cara yang mudah dan nyaman.
-                        </p>
-                     </div>
-                     <!-- Useful links section -->
-                     <div class="">
-                        <h6
-                           class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-                           Didukung oleh
-                        </h6>
-                        <div class="grid grid-cols-4 grid-rows-1 items-center">
-                           <div class="flex justify-center md:justify-start"><img src="img/2artech.png" alt="" class="w-10"></div>
-                           <div class="flex justify-center md:justify-start"><img src="img/medinfo.png" alt="" class="h-4"></div>
-                           <div class="flex justify-center md:justify-start"><img src="img/osis.png" alt="" class="w-10"></div>
-                           <div class="flex justify-center md:justify-start"><img src="img/mpk.png" alt="" class="w-10"></div>
-                        </div>
-                        <h6
-                           class="mb-4 mt-8 flex justify-center font-semibold uppercase md:justify-start">
-                           Tagline
-                        </h6>
-                        <div class="grid grid-cols-2 grid-rows-1 md:grid-cols-1 lg:grid-cols-1">
-                           <div class="flex justify-center md:justify-start"><img src="img/bws7.png" alt="" class="h-6 mb-4"></div>
-                           <div class="flex justify-center md:justify-start"><img src="img/smansalahebat.png" alt="" class="h-6"></div>
-                        </div>
-                     </div>
-                     <!-- Contact section -->
-                     <div class="">
-                        <h6
-                           class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-                           Kontak
-                        </h6>
-                        <p class="mb-4 flex items-center justify-center md:justify-start">
-                           <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="currentColor"
-                              class="mr-3 h-5 w-5">
-                              <path
-                                 d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
-                              <path
-                                 d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
-                           </svg>
-                           Jalan Mayor Ruslan 1 No.39 Lahat
-                        </p>
-                        <p class="mb-4 flex items-center justify-center md:justify-start">
-                           <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="currentColor"
-                              class="mr-3 h-5 w-5">
-                              <path
-                                 d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
-                              <path
-                                 d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
-                           </svg>
-                           smansalahat@yahoo.com
-                        </p>
-                        <p class="mb-4 flex items-center justify-center md:justify-start">
-                           <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="currentColor"
-                              class="mr-3 h-5 w-5">
-                              <path
-                                 fill-rule="evenodd"
-                                 d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
-                                 clip-rule="evenodd" />
-                           </svg>
-                           (0731) 326542
-                        </p>
-                        <p class="flex items-center justify-center md:justify-start">
-                           <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="currentColor"
-                              class="mr-3 h-5 w-5">
-                              <path
-                                 fill-rule="evenodd"
-                                 d="M7.875 1.5C6.839 1.5 6 2.34 6 3.375v2.99c-.426.053-.851.11-1.274.174-1.454.218-2.476 1.483-2.476 2.917v6.294a3 3 0 003 3h.27l-.155 1.705A1.875 1.875 0 007.232 22.5h9.536a1.875 1.875 0 001.867-2.045l-.155-1.705h.27a3 3 0 003-3V9.456c0-1.434-1.022-2.7-2.476-2.917A48.716 48.716 0 0018 6.366V3.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM16.5 6.205v-2.83A.375.375 0 0016.125 3h-8.25a.375.375 0 00-.375.375v2.83a49.353 49.353 0 019 0zm-.217 8.265c.178.018.317.16.333.337l.526 5.784a.375.375 0 01-.374.409H7.232a.375.375 0 01-.374-.409l.526-5.784a.373.373 0 01.333-.337 41.741 41.741 0 018.566 0zm.967-3.97a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H18a.75.75 0 01-.75-.75V10.5zM15 9.75a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V10.5a.75.75 0 00-.75-.75H15z"
-                                 clip-rule="evenodd" />
-                           </svg>
-                           (0731) 326542
-                        </p>
-                     </div>
+                  <div class="flex justify-center md:justify-start">
+                    <img src="img/osis.png" alt="" class="w-10" />
                   </div>
-               </div>
-               <!--Copyright section-->
-               <div class="bg-neutral-200 p-6 text-center dark:bg-neutral-700">
-                  <span>Copyright © 2023 </span>
-                  <a
-                     class="font-semibold text-neutral-600 dark:text-neutral-400"
-                     href="https://tailwind-elements.com/"
-                     >mplssmansa</a
-                     >
-               </div>
-            </footer>
-         </main>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
-   </body>
+                  <div class="flex justify-center md:justify-start">
+                    <img src="img/mpk.png" alt="" class="w-10" />
+                  </div>
+                </div>
+                <h6
+                  class="mb-4 mt-8 flex justify-center font-semibold uppercase md:justify-start"
+                >
+                  Tagline
+                </h6>
+                <div
+                  class="grid grid-cols-2 grid-rows-1 md:grid-cols-1 lg:grid-cols-1"
+                >
+                  <div class="flex justify-center md:justify-start">
+                    <img src="img/bws7.png" alt="" class="h-6 mb-4" />
+                  </div>
+                  <div class="flex justify-center md:justify-start">
+                    <img src="img/smansalahebat.png" alt="" class="h-6" />
+                  </div>
+                </div>
+              </div>
+              <!-- Contact section -->
+              <div class="">
+                <h6
+                  class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+                >
+                  Kontak
+                </h6>
+                <p
+                  class="mb-4 flex items-center justify-center md:justify-start"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="mr-3 h-5 w-5"
+                  >
+                    <path
+                      d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z"
+                    />
+                    <path
+                      d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"
+                    />
+                  </svg>
+                  Jalan Mayor Ruslan 1 No.39 Lahat
+                </p>
+                <p
+                  class="mb-4 flex items-center justify-center md:justify-start"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="mr-3 h-5 w-5"
+                  >
+                    <path
+                      d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                    />
+                    <path
+                      d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                    />
+                  </svg>
+                  smansalahat@yahoo.com
+                </p>
+                <p
+                  class="mb-4 flex items-center justify-center md:justify-start"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="mr-3 h-5 w-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  (0731) 326542
+                </p>
+                <p class="flex items-center justify-center md:justify-start">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="mr-3 h-5 w-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.875 1.5C6.839 1.5 6 2.34 6 3.375v2.99c-.426.053-.851.11-1.274.174-1.454.218-2.476 1.483-2.476 2.917v6.294a3 3 0 003 3h.27l-.155 1.705A1.875 1.875 0 007.232 22.5h9.536a1.875 1.875 0 001.867-2.045l-.155-1.705h.27a3 3 0 003-3V9.456c0-1.434-1.022-2.7-2.476-2.917A48.716 48.716 0 0018 6.366V3.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM16.5 6.205v-2.83A.375.375 0 0016.125 3h-8.25a.375.375 0 00-.375.375v2.83a49.353 49.353 0 019 0zm-.217 8.265c.178.018.317.16.333.337l.526 5.784a.375.375 0 01-.374.409H7.232a.375.375 0 01-.374-.409l.526-5.784a.373.373 0 01.333-.337 41.741 41.741 0 018.566 0zm.967-3.97a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H18a.75.75 0 01-.75-.75V10.5zM15 9.75a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V10.5a.75.75 0 00-.75-.75H15z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  (0731) 326542
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Copyright section-->
+          <div class="bg-neutral-200 p-6 text-center dark:bg-neutral-700">
+            <span>Copyright © 2023 </span>
+            <a
+              class="font-semibold text-neutral-600 dark:text-neutral-400"
+              href="https://tailwind-elements.com/"
+              >mplssmansa</a
+            >
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+  </body>
 </html>
