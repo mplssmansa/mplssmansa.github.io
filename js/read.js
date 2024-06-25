@@ -34,11 +34,9 @@ $(document).ready(async function () {
         var link = $("#linkdownload");
         link.attr(
           "href",
-          link.attr("href") +
-            "?nopendaftaran=" +
-            nopendaftaran +
-            "&jalurpenerimaan=" +
-            jalurpenerimaan
+          link.attr("href") + "?nopendaftaran=" + nopendaftaran
+          // "&jalurpenerimaan=" +
+          // jalurpenerimaan
         );
         loadingScreen.style.display = "none";
         return;
